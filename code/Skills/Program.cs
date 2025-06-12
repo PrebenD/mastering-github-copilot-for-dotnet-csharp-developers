@@ -36,6 +36,15 @@ void DivideNumbers(int a, int b)
     double result = (double)a / b;
     Console.WriteLine($"The result of dividing {a} by {b} is {result}.");
 }
+
+void ShowMemberInfo(string firstName, string lastName, string role, string email, string phoneNumber)
+{
+    Console.WriteLine($"First Name: {firstName}");
+    Console.WriteLine($"Last Name: {lastName}");
+    Console.WriteLine($"Role: {role}");
+    Console.WriteLine($"Email: {email}");
+    Console.WriteLine($"Phone Number: {phoneNumber}");
+}   
 void Main()
 {
     int[] numbers = { 1, 2, 3, 4, 5, 1, 2, 3 };
@@ -46,6 +55,10 @@ void Main()
     SubtractNumbers(10, 4);
     MultiplyNumbers(6, 7);
     DivideNumbers(20, 4);
+
+    // Example usage of ShowMemberInfo
+    ShowMemberInfo("Alice", "Smith", "Developer", "alice.smith@example.com", "123-456-7890");
 }
+
 Main();
 // This code defines several mathematical operations and a function to count occurrences of a number in an array.
